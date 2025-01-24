@@ -12,18 +12,18 @@ If you don't have it, let's comment out in `Dockerfile`.
 ## How to build
 
 ```sh
-docker build -t pgstrom .
+docker build -t smellman/pgstrom-openmaptiles .
 ```
 
-or without cache.
+or without cache (force rebuild with pg-strom master branch).
 
 ```sh
-docker build --no-cache -t pgstrom .
+docker build --no-cache -t smellman/pgstrom-openmaptiles .
 ```
 
 ## How to use
 
-edit your `docker-compose.yml`:
+edit your `docker-compose.yml` on openmaptiles:
 
 ```yaml
 services:
@@ -69,4 +69,4 @@ see alse: `my-postgres.conf`
 
 - [ytooyama pg-strom-docker](https://github.com/ytooyama/pg-strom-docker)
 - [docker-library postgres](https://github.com/docker-library/postgres)
-- []
+- [smellman pg-strom-docker-ubuntu](https://github.com/smellman/pg-strom-docker-ubuntu)
